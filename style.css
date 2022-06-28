@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Big+Shoulders+Display:wght@700&family=Bitter&family=Fira+Sans:wght@600&family=Fraunces:opsz,wght@9..144,700&family=Inconsolata:wght@600&family=Inter:wght@400;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Lobster&family=Montserrat:wght@500;700&family=Outfit:wght@400;700&family=Poppins:ital,wght@0,100;0,300;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@400;700&family=Red+Hat+Display:wght@500;700;900&family=Roboto:wght@100&display=swap');
+
+
+.attribution {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+    transition: 0.7s ease;
+}
+
+.attribution a:hover {
+    transform: scale(1.1);
+    color: blue;
+}
+
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: hsl(0, 0%, 98%);
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+main {
+    padding: 4rem 6rem;
+}
+
+.main-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.top-headers {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 40%;
+    text-align: center;
+    margin: auto;
+}
+
+.top-headers h1 {
+    margin: 0.2rem 0;
+    font-size: 2rem;
+}
+
+#main-header {
+    color: hsl(234, 12%, 34%);
+    transition: 0.7s ease;
+    cursor: pointer;
+}
+
+#main-header:hover {
+    transform: translate(5px, 5px);
+}
+
+.soft-font {
+    color: hsl(229, 6%, 66%);
+    font-weight: 400;
+}
+
+
+.card-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 3rem;
+}
+
+.cards {
+    width: 20rem;
+    padding: 2rem;
+    height: 16rem;
+    margin: 0 2rem;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07),
+        0 2px 4px rgba(0, 0, 0, 0.07),
+        0 4px 8px rgba(0, 0, 0, 0.07),
+        0 8px 16px rgba(0, 0, 0, 0.07),
+        0 16px 32px rgba(0, 0, 0, 0.07),
+        0 32px 64px rgba(0, 0, 0, 0.07);
+    position: relative;
+    transition: 0.7s ease;
+}
+
+.cards:hover {
+    transform: scale(1.1);
+}
+
+.cards h2 {
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+
+.box-img {
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+}
+
+#card-one {
+    border-top: 4px solid hsl(180, 62%, 55%);
+    margin-top: 10rem;
+}
+
+#card-two {
+    border-top: 4px solid hsl(0, 78%, 62%);
+    margin-bottom: 4rem;
+}
+
+#card-three {
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+#card-four {
+    border-top: 4px solid hsl(212, 86%, 64%);
+    margin-top: 10rem;
+}
+
+.two-cards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+
+footer {
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+
+
+@media(max-width:1300px) {
+    .card-section {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .cards {
+        margin: 2rem 0;
+    }
+
+    #card-one {
+        margin-top: 5rem;
+        margin-bottom: 0;
+    }
+
+    #card-four {
+        margin-top: 0;
+    }
+
+    #card-three {
+        margin-top: 0;
+    }
+
+    #card-two {
+        margin-bottom: 2rem;
+    }
+
+    .two-cards {
+        margin-top: 0;
+    }
+
+
+}
+
+@media(max-width:900px) {
+
+    main {
+        padding: 4rem 2rem;
+    }
+
+    .top-headers {
+        width: 100%;
+    }
+}
+
+@media(max-width:378px) {
+
+    main {
+        padding: 2rem 1rem;
+    }
+
+    .top-headers {
+        width: 100%;
+    }
+
+    .cards {
+        width: 16rem;
+        padding: 2rem;
+        height: 20rem;
+    }
+}
